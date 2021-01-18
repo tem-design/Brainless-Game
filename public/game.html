@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Brainless Choice</title>
+</head>
+<body class="bg-pattern">
+    <img src="./images/beer-mug.png" id="beer">
+    <img src="./images/burger.png" id="burger">
+    <img src="./images/candy.png" id="candy">
+    <img src="./images/drink.png" id="drink">
+    <img src="./images/fried-chicken.png" id="chicken">
+    <img src="./images/ice-cream-cake.png" id="ice-cream">
+    <img src="./images/pizza.png" id="pizza">
+    <img src="./images/ramen.png" id="ramen">
+    <img src="./images/sushi.png" id="sushi">
+    <img src="./images/watermelon.png" id="watermelon">
+
+    <h1 class="text-center text-indigo-500 text-5xl py-4">What will I have Today?</h1>
+    <p class="text-center text-indigo-600 text-3xl py-4">If you are ready, Click the Stop Button</p>
+    <h2 class="text-center text-indigo-600 text-5xl py-4"></h2>
+    <div id="game" class="flex flex-col space-y-20 items-center">
+        <div id="game-image-container" class="border-2 border-indigo-400"> </div>
+        <button type="submit" id="stop-btn" class="focus:outline-none bg-indigo-500 w-20 h-20 text-center rounded-full shadow-xl font-semibold text-white tracking-wider">stop</button>
+    </div>
+
+    <footer>
+        <p class="text-sm underline text-center text-indigo-400">Image from flaticon</p>
+        <p class="text-sm underline text-center text-indigo-400">Sound Effect from Zapsplat</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>

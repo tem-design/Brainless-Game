@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+p, h2, button{
+    font-family: 'Kufam', cursive;
+}
+
+.bg-pattern{
+    height: 700px;
+    background-color: #dceff5;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+}
+
+img{
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+#game-image-container{
+    position: relative;
+    width: 140px;
+    height: 140px;
+/*     left: 50%;
+    transform: translateX(-50%); */
+/*     border-radius: 100%; */
+    overflow: hidden;
+}
+#game-image-container img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all;
+    animation-name: up;
+    animation-duration: 0.5s;
+    top: 150px;
+}
+#stop-btn{
+    /* padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: crimson;
+    font-size: 1.2rem; */
+}
+@keyframes up{
+    100%{
+        top: -150px;
+    }
+}
+
+@keyframes stop{
+    100%{
+        top: 20px;
+    }
+}
